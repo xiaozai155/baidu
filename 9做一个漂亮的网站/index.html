@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-family: 'Montserrat-ExtraLight', Geneva, sans-serif;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        header{
+            background:url("images/Header_background.png");
+            height:990px;
+            color:white;
+        }
+        header h1{
+            margin-top:80px;
+            margin-bottom:80px;
+            text-align:center;
+            padding-top:180px;
+            font-weight:400;
+            font-size:63px;
+            opacity:0.8;
+        }
+        header p{
+            font-size:14px;
+            text-align:center;
+            font-weight:300;
+            opacity:0.5;
+        }
+        .form{
+            width:970px;
+            height:250px;
+            margin:100px auto 0;
+        }
+        .form h4{
+            font:400 16px "";
+            text-align:center;
+        }
+        .form_box{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .form_box .form_input1,
+        .form_input2
+        {
+            width:290px;
+            height:50px;
+            outline:none;
+            background-color:transparent;
+            border:1px solid rgba(0, 0, 0, 0.35);
+        }
+        .form_input1{
+            margin-left:98px;
+        }
+        .form_input2{
+           margin-left:30px;
+        }
+        .form .form_input3{
+            margin-left:30px;
+            width:126px;
+            height:50px;
+            border:1px solid rgba(0, 0, 0, 0.35);
+            border-radius:4px;
+        }
+        .nav{
+            height:712px;
+        }
+        .nav{
+
+            opacity:0.5;
+        }
+        .navtop{
+            text-align:center;
+            margin-top:60px;
+        }
+        .navtop h2{
+            font:400 16px "";
+        }
+        .navtop p{
+            font:400 30px "";
+        }
+        .navbottom{
+            width:1040px;
+            height:300px;
+            margin:60px auto 0;
+        }
+        .navbottom1,
+        .navbottom2,
+        .navbottom3,
+        .navbottom4
+        {
+            width:520px;
+            height:150px;
+            float:left;
+        }
+        .navbottom img{
+            float:left;
+        }
+        .navbottom1_1{
+            float:left;
+            width:350px;
+            margin:15px 0 0 15px;
+        }
+        .navbottom1_1 p{
+            margin-top:10px;
+            font-size:13px;
+            height:20px;
+        }
+        .course{
+            background:url("images/Call-to-action_background.png")no-repeat;
+            height:800px;
+        }
+        .course1{
+            height:600px;
+            width:600px;
+            float:right;
+            margin-top:100px;
+        }
+        .course2{
+            width:584px;
+            height:544px;
+            padding:28px 0 28px 56px;
+            border:1px solid rgba(0, 0, 0, 0.35);
+            border-top-left-radius:17px;
+            border-bottom-left-radius:17px;
+            float:right;
+            margin-top:100px;
+            background:url("images/Call-to-action-screen.png")no-repeat right center;
+            position:relative;
+        }
+        .course1 h3{
+            font-size:30px;
+            margin:80px 0 60px 0;
+            opacity:0.5;
+        }
+        .course1 p{
+            font-size:20px;
+            opacity:0.5;
+        }
+        .course1 .course1_1{
+            margin-top:60px;
+        }
+        .course1 .course1_1 .last,
+        .course1 .course1_1 .last1
+        {
+            width:240px;
+            height:62px;
+        }
+        .course1 .course1_1 .last1{
+            background:transparent;
+        }
+        .course2 span{
+            display:block;
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            position:absolute;
+            left:18px;
+            top:50%;
+            margin-top:-5px;
+            border:1px solid rgba(0, 0, 0, 0.37);
+        }
+        .hero{
+            border-bottom:1px solid rgba(0, 0, 0, 0.38);
+        }
+        .heros{
+            width:980px;
+            height:580px;
+            margin:auto;
+        }
+        .heros ul{
+            display:flex;
+            flex:1;
+            height:300px;
+        }
+        .heros li{
+            list-style:none;
+            padding:45px;
+        }
+        .heros img{
+            margin:0 0 30px 58px;
+        }
+        .heros ul p{
+            font:400 11px/20px "";
+            text-align:center;
+        }
+        .heros h1{
+            margin:100px 0 35px 0;
+            text-align:center;
+        }
+        .study{
+            border:1px solid rgba(0, 0, 0, 0.33);
+            overflow:hidden;
+        }
+        .studys{
+            width:980px;
+            display:flex;
+            flex-direction:column;
+            margin:auto;
+        }
+        .studys1{
+            height:390px;
+            margin-top:116px;
+        }
+        .studys2{
+            height:390px;
+            margin-bottom:102px;
+        }
+        .studys img{
+            width:570px;
+            height:354px;
+        }
+        .studys1 img{
+            float:left;
+        }
+        .studys1 .studys2_1{
+            float:left;
+            height:340px;
+            width:340px;
+            padding:10px;
+            margin:70px 0 0 20px;
+        }
+        .studys h4{
+            font:400 18px/30px "";
+        }
+        .studys p{
+            font:400 12px/30px "";
+        }
+        .studys2 img{
+            float:right;
+        }
+        .studys2 .studys2_2{
+            float:right;
+            height:340px;
+            width:340px;
+            padding:10px;
+            margin:70px 0 0 20px;
+        }
+        /*做不来*/
+        .tables{
+            width:980px;
+            margin:auto;
+            padding:70px 0;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .tables .tables1{
+            width:370px;
+            height:460px;
+            border:1px solid rgba(0, 0, 0, 0.34);
+            display:flex;
+            flex-direction:column;
+            padding:50px;
+        }
+        .tables .tables2{
+
+        }
+        .tables .tables1 h4{
+            margin-top:20px;
+            text-align:center;
+        }
+        .tables .tables1 input{
+            height:50px;
+            padding-left:20px;
+            outline:none;
+            border:1px solid rgba(0, 0, 0, 0.35);
+        }
+        .tables1_1{
+            margin-top:40px;
+        }
+        .tables1_2{
+            margin-top:28px;
+        }
+        .tables1_3{
+            margin-top:28px;
+            outline:none;
+            height:142px;
+            resize:none;
+        }
+        .tables1_4{
+            margin-top:28px;
+            background-color:black;
+            color:white;
+        }
+        .tables2{
+            width:370px;
+            height:460px;
+            display:flex;
+            flex-direction:column;
+            padding:50px;
+            margin-left:35px;
+        }
+        .tables2_1 h4{
+            font-size:22px;
+        }
+        .tables2_1 p{
+            font-size:14px;
+            margin-top:34px;
+        }
+        .tables2_2{
+            margin-top:70px;
+        }
+        .tables2_21{
+            height:52px;
+        }
+        .tables2_21 img{
+            float:left;
+        }
+        .tables2_21 p{
+            float:left;
+            font-size:12px;
+        }
+        .out{
+            height:1084px;
+            border-bottom:1px solid rgba(0, 0, 0, 0.38);
+        }
+        .outs{
+            margin:auto;
+            width:980px;
+        }
+        .outs1 h4{
+            text-align:center;
+            font-size:20px;
+            margin-top:96px;
+        }
+        .outs1 p{
+            text-align:center;
+            font-size:14px;
+            margin-top:30px;
+        }
+        .outs2{
+            margin-top:62px;
+            display:flex;
+            flex-wrap:wrap;
+            color:white;
+        }
+        .outs2 img{
+            width:470px;
+            height:340px;
+        }
+        .outs2_1{
+             width:470px;
+             height:340px;
+             margin-top:30px;
+             position:relative;
+         }
+        .outs2_2{
+            width:470px;
+            height:340px;
+            margin:30px 0 0 30px;;
+            position:relative;
+        }
+        .outs2_3{
+            width:470px;
+            height:340px;
+            margin-top:30px;
+            position:relative;
+        }
+        .outs2_4{
+            width:470px;
+            height:340px;
+            margin:30px 0 0 30px;;
+            position:relative;
+        }
+        .outs2_11{
+            width:470px;
+            height:340px;
+            position:absolute;
+            left:0;
+            top:0;
+            text-align:center;
+            background-color: rgba(0, 0, 0, 0.65);
+            opacity:0;
+        }
+        .outs2 h4{
+            margin-top:108px;
+        }
+        .outs2_11:hover{
+            opacity:1;
+        }
+        .end{
+            height:408px;
+            background-color:black;
+        }
+        .ends{
+            width:980px;
+            margin:auto;
+            display:flex;
+            height:240px;
+            padding-top:90px;
+        }
+        .ends ul{
+            display:flex;
+            flex:1;
+            flex-direction:column;
+        }
+        .ends li{
+            list-style:none;
+            height:46px;
+        }
+        .ends li a{
+            color:white;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hello world</h1>
+    <p>
+        China is speeding up strategic plan, standards, traffic rules,
+        laws and regulations <br> on accident-incurred liabilities for its
+        smart car industry, <br> Economic Information Daily reported Thursday.
+    </p>
+    <form action="" class="form">
+        <h4>CREATE YOUR ACCOUNT</h4>
+        <p>IT IS ABSOLUTELY FREE</p>
+        <div class="form_box">
+            <input type="text" placeholder="denis@getcraftwork.com" value="sfofja" class="form_input1">
+            <input type="password" placeholder="Create you passworld" class="form_input2">
+            <input type="submit" class="form_input3" value="SICN UP">
+        </div>
+    </form>
+</header>
+<section class="nav">
+    <div class="navtop">
+        <h2>BOATLOADS OF AWESOME</h2>
+        <p>Ready-made, customizable, <br> HTML landing page sections</p>
+    </div>
+    <div class="navbottom">
+            <div class="navbottom1">
+                <img src="images/Feature-9_Iphone-Icon.png" alt="">
+                <div class="navbottom1_1">
+                    <h4>Mobile First</h4>
+                    <p>All modulz are built mobile-first for maximum device compatibility</p>
+                </div>
+            </div>
+            <div class="navbottom2">
+                <img src="images/Contact-1_Mail-Icon.png" alt="">
+                <div class="navbottom1_1">
+                    <h4>Mobile First</h4>
+                    <p>All modulz are built mobile-first for maximum device compatibility</p>
+                </div>
+            </div>
+            <div class="navbottom3">
+                <img src="images/Feature-9_Pencil-Icon.png" alt="">
+                <div class="navbottom1_1">
+                    <h4>Mobile First</h4>
+                    <p>All modulz are built mobile-first for maximum device compatibility</p>
+                </div>
+            </div>
+            <div class="navbottom4">
+                <img src="images/Feature-9_Settings-Icon.png" alt="">
+                <div class="navbottom1_1">
+                    <h4>Mobile First</h4>
+                    <p>All modulz are built mobile-first for maximum device compatibility</p>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="course">
+    <div class="course2">
+        <span></span>
+    </div>
+    <div class="course1">
+        <h3>Supportive policies
+            <br> for China's  smart <br> car</h3>
+        <p>
+            China will come up with its own smart car <br> stardards, traffic rules, laws and <br>
+            regulations relating to safety, acconding to
+            <br> the China industry innovation Alliance for <br> the Interlli-gent and Connected Vehicles.</p>
+        <div class="course1_1">
+            <button class="last">CHECK OUR FEATUERES</button>
+            <button class="last1">TRY PRODUCT FOR FREE</button>
+        </div>
+    </div>
+</section>
+<section class="hero">
+    <div class="heros">
+        <h1>Try Our Awesome Products</h1>
+        <ul>
+            <li>
+                <img src="images/Feature-19_Singleton.png" alt="">
+                <p>Li Jun, a China Academy of Engineering academician and also director of the all
+                    iance's experts' committee, said that China will also launch design guidance fo
+                    r smart cars, smart map architecture and standards for test grounds.</p>
+            </li>
+            <li>
+                <img src="images/Feature-19_Portland.png" alt="">
+                <p>
+                    Li said the smart car industry is able to enlarge the current car industry by 1 trillion yuan
+                    ($158.15 billion) and also able to boost fast development in 5G, internet of car
+                    s, big data, artificial intelligence and new-energy vehicles.
+                </p>
+            </li>
+            <li>
+                <img src="images/Feature-19_Hero.png" alt="">
+                <p>
+                    Zhang Junyi, a partner with NIO Capital, said that the smart car is the trend for the car
+                    industry and China's auto sector will usher in a new key development stage with the
+                    improvement of infrastructure, technology, policies and laws.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="study">
+    <div class="studys">
+        <div class="studys1">
+            <img src="images/Feature-14_photo1.png" alt="">
+            <div class="studys2_1">
+                <h4>Learn How to Improve Your Personal Business</h4>
+                <p>
+                    Li Jun, a China Academy of Engineering academician and also director of the alliance's
+                    experts' committee, said that China will also launch design guidance for smart cars,
+                    smart map architecture and standards for test grounds.
+                </p>
+            </div>
+        </div>
+        <div class="studys2">
+            <img src="images/Feature-14_photo2.png" alt="">
+            <div class="studys2_2">
+                <h4>Choose Between Two Beautifully Designed Color Schemes.</h4>
+                <p>
+                    China will come up with its own smart car standards, traffic rules, laws and regulations
+                    relating to safety, according to the China Industry Innovation Alliance
+                    for the Intelligent and Connected Vehicles.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="out">
+    <div class="outs">
+        <div class="outs1">
+            <h4>Our Awesome Crew</h4>
+            <p>
+                Our unique online teaching style makes learning easy for everyone. Whether
+                <br> you are trying to land a new job, brush up on your skills.
+            </p>
+        </div>
+        <div class="outs2">
+            <div class="outs2_1">
+                <img src="images/Team-4_Userpic 1.png" alt="">
+                <div class="outs2_11">
+                    <h4>Ethan Dutton</h4>
+                    <p>Senior Visual Designer</p>
+                </div>
+            </div>
+            <div class="outs2_2">
+                <img src="images/Team-4_Userpic 2.png" alt="">
+                <div class="outs2_11">
+                    <h4>Ethan Dutton</h4>
+                    <p>Senior Visual Designer</p>
+                </div>
+            </div>
+            <div class="outs2_3">
+                <img src="images/Team-4_Userpic 3.png" alt="">
+                <div class="outs2_11">
+                    <h4>Ethan Dutton</h4>
+                    <p>Senior Visual Designer</p>
+                </div>
+            </div>
+            <div class="outs2_4">
+                <img src="images/Team-4_Userpic 4.png" alt="">
+                <div class="outs2_11">
+                    <h4>Ethan Dutton</h4>
+                    <p>Senior Visual Designer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="table" >
+    <div class="tables">
+        <form action="" class="tables1">
+            <h4>FELL FREE TO WAIT US</h4>
+            <input type="text" placeholder="E-mail" class="tables1_1">
+            <input type="text" placeholder="Subject" class="tables1_2">
+            <textarea name="message" id="" cols="30" rows="10" class="tables1_3"></textarea>
+            <input type="submit" value="SEND" class="tables1_4">
+        </form>
+        <div class="tables2">
+            <div class="tables2_1">
+                <h4>Contracts</h4>
+                <p>
+                    Make any design your own using the Style Editor.
+                    Personalize fonts, colors,
+                    and layouts to create the custom look you want.
+                </p>
+            </div>
+            <div class="tables2_2">
+                <div class="tables2_21">
+                    <img src="images/Contact-1_Map-Icon.png" alt="">
+                    <p>
+                        360 King Street
+                        Feastravel Trevose, PA 19057
+                    </p>
+                </div>
+                <div class="tables2_21">
+                    <img src="images/Contact-1_Phone-Icon.png" alt="">
+                    <p>(755)564-84-12</p>
+                </div>
+                <div class="tables2_21">
+                    <img src="images/Contact-1_Mail-Icon.png" alt="">
+                    <p>yourname@mail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="end">
+    <div class="ends">
+        <ul>
+            <li><a href="">LEARN MORE</a></li>
+            <li><a href="">How it works?</a></li>
+            <li><a href="">Meeting tools</a></li>
+            <li><a href="">Live streaming</a></li>
+            <li><a href="">Contact method</a></li>
+        </ul>
+        <ul>
+            <li><a href="">LEARN MORE</a></li>
+            <li><a href="">How it works?</a></li>
+            <li><a href="">Meeting tools</a></li>
+            <li><a href="">Live streaming</a></li>
+            <li><a href="">Contact method</a></li>
+        </ul>
+        <ul>
+            <li><a href="">LEARN MORE</a></li>
+            <li><a href="">How it works?</a></li>
+            <li><a href="">Meeting tools</a></li>
+            <li><a href="">Live streaming</a></li>
+            <li><a href="">Contact method</a></li>
+        </ul>
+        <ul>
+            <li><a href="">LEARN MORE</a></li>
+            <li><a href="">How it works?</a></li>
+            <li><a href="">Meeting tools</a></li>
+            <li><a href="">Live streaming</a></li>
+            <li><a href="">Contact method</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

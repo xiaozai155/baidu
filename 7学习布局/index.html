@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .logo{
+            background-color: rgba(0, 0, 0, 0.71);
+            display:flex;
+            justify-content:center;
+        }
+        .logow{
+            width:980px;
+            height:80px;
+        }
+        .logo1{
+            color:white;
+            float:left;
+            line-height:80px;
+            text-align:center;
+            font-size:26px;
+        }
+        .logow ul{
+            float:right;
+        }
+        .logo ul li{
+            float:left;
+            list-style:none;
+            margin:5px 10px 0 0;
+        }
+        .logo ul li a{
+            color:white;
+            font-size:12px;
+        }
+        .nav{
+            height:300px;
+            background-color:olivedrab;
+            display:flex;
+            justify-content:center;
+        }
+        .navw{
+            width:980px;
+            position:relative;
+        }
+        .navw ul{
+            position:absolute;
+            right:10px;
+            bottom:10px;
+            height:42px;
+        }
+        .navw ul li{
+            float:left;
+            list-style:none;
+            border:1px solid rgba(0, 0, 0, 0.47);
+            margin-left:5px;
+        }
+        .navw li a{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:30px;
+            height:36px;
+            text-decoration:none;
+            color: rgba(0, 0, 0, 0.43);
+            background-color: rgba(255, 255, 255, 0.18);
+        }
+        .navw li a:hover{
+            background-color:white;
+            padding-bottom:6px;
+        }
+        .tab{
+            border-bottom:1px solid rgba(0, 0, 0, 0.31);
+        }
+        .tabs{
+            width:980px;
+            margin:auto;
+            height:50px;
+            padding:20px 0 1px 0;
+        }
+        .tabs ul{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .tabs li{
+            list-style:none;
+            font:400 14px "微软雅黑";
+        }
+        .tabs a{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:102px;
+            height:50px;
+            border:1px solid rgba(0, 0, 0, 0.31);
+            margin-left:-1px;
+            border-top-left-radius:20px;
+            border-top-right-radius:20px;
+            text-decoration:none;
+            color: rgba(0, 0, 0, 0.48);
+        }
+        .tabs a:hover{
+            border-bottom-color:white;
+        }
+        .contents{
+            width:980px;
+            margin:auto;
+        }
+        .contents .content1,
+        .contents .content2,
+        .contents .content3
+        {
+            display:flex;
+            height:175px;
+            margin-top:10px;
+        }
+        .content1 .content1_1,
+        .content2_1,
+        .content3_1
+        {
+            border:1px solid rgba(0, 0, 0, 0.35);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:0%;
+            margin-right:10px;
+        }
+        .baidu{
+            background-color: rgba(0, 0, 0, 0.4);
+            height:120px;
+            margin-top:15px;
+            display:flex;
+            justify-content:center;
+        }
+        .baidu1{
+            width:980px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logow">
+            <div class="logo1">Logo</div>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navw">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab">
+        <div class="tabs">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contents">
+            <div class="content1">
+                <div class="content1_1">
+                    <p>This is content 1</p>
+                </div>
+                <div class="content1_1">
+                    <p>MaybeConten 2</p>
+                </div>
+                <div class="content1_1">
+                    <p>content 3</p>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content2_1">
+                    <p>content4</p>
+                </div>
+                <div class="content2_1">
+                    <p>content5</p>
+                </div>
+                <div class="content2_1">
+                    <p>content6</p>
+                </div>
+                <div class="content2_1">
+                    <p>content7</p>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="content3_1">
+                    <p>content8</p>
+                </div>
+                <div class="content3_1">
+                    <p>content9</p>
+                </div>
+                <div class="content3_1">
+                    <p>content10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="baidu">
+        <div class="baidu1">
+            <p>© 2018 ife.baidu.com</p>
+        </div>
+    </div>
+</body>
+</html>
